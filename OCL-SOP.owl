@@ -291,6 +291,9 @@
         <Class IRI="#Remove"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#stain"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Spool_up"/>
     </Declaration>
     <Declaration>
@@ -586,9 +589,6 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#reduce_contamination"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#enumerate"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Class_22"/>
@@ -1562,7 +1562,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Count"/>
-        <Class IRI="#Class_89"/>
+        <Class IRI="#&apos;data_action&apos;"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Count"/>
@@ -2380,17 +2380,6 @@
         <Class IRI="#Class_89"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#enumerate"/>
-        <Class IRI="#&apos;data_action&apos;"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#enumerate"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000057"/>
-            <Class IRI="#OWLClass_73dc6c0b_f3ca_475a_9cb1_03dcc16f75b1"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#estimate"/>
         <Class IRI="#&apos;data_action&apos;"/>
     </SubClassOf>
@@ -2504,6 +2493,24 @@
     <SubClassOf>
         <Class IRI="#spot"/>
         <Class IRI="#Class_89"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#stain"/>
+        <Class IRI="#Class_89"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#stain"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000057"/>
+            <Class IRI="#Class_66"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#stain"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000057"/>
+            <Class IRI="#OWLClass_73dc6c0b_f3ca_475a_9cb1_03dcc16f75b1"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#steam"/>
@@ -3026,6 +3033,11 @@ Reference: based on COLLINS SOFTBACK ENGLISH DICTIONARY, HarperCollins Publisher
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Class_19</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">aspirate</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#Synonym"/>
+        <IRI>#Class_20</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">agitate</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#is_definition"/>
@@ -3620,6 +3632,11 @@ Reference: based on COLLINS SOFTBACK ENGLISH DICTIONARY, HarperCollins Publisher
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Cool</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">cool</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#Synonym"/>
+        <IRI>#Count</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">enumerate</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#is_definition"/>
@@ -4365,11 +4382,6 @@ Reference: based on COLLINS SOFTBACK ENGLISH DICTIONARY, HarperCollins Publisher
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">emulsify</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="#Synonym"/>
-        <IRI>#enumerate</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">count</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#examine</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">examine</Literal>
@@ -4419,6 +4431,11 @@ write</Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#spot</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">spot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#is_definition"/>
+        <IRI>#stain</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">To use a coloring agent to enhance the structure of a ‘biochemical entity’, usually a specimen for easy viewing, using equipment such as a microscope</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
